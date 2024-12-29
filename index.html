@@ -18,12 +18,18 @@
             color: #0056b3;
             font-size: 2em;
         }
+        .table-container {
+            width: 100%;
+            overflow-x: auto; /* Enables horizontal scrolling for the table */
+            margin: 0 auto;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px auto;
             background: #fff;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            table-layout: auto; /* Allows columns to adjust dynamically */
         }
         th, td {
             padding: 12px;
@@ -62,13 +68,10 @@
                 font-size: 1.5em;
             }
             table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
+                font-size: 0.9em; /* Slightly smaller font for compact view */
             }
             th, td {
-                padding: 10px;
-                font-size: 0.9em;
+                padding: 8px; /* Reduce padding for smaller screens */
             }
         }
     </style>
