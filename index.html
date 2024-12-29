@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0043)https://mattr1970.github.io/frontline-list/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontline Episodes</title>
     <style>
@@ -10,15 +11,22 @@
             margin: 20px;
             background-color: #f9f9f9;
             color: #333;
+            font-size: 16px;
         }
         h1 {
             text-align: center;
             color: #0056b3;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .table-container {
+            width: 100%;
+            overflow-x: auto; /* Allow horizontal scrolling for narrow screens */
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px auto;
+            margin-bottom: 20px;
             background: #fff;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
@@ -26,6 +34,7 @@
             padding: 12px;
             border: 1px solid #ccc;
             text-align: left;
+            word-wrap: break-word;
         }
         th {
             background-color: #0056b3;
@@ -45,9 +54,14 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Adjustments */
         @media screen and (max-width: 768px) {
-            table {
-                font-size: 14px;
+            body {
+                font-size: 14px; /* Slightly smaller font for compact screens */
+            }
+            th, td {
+                padding: 10px;
             }
         }
     </style>
