@@ -27,6 +27,7 @@
             padding: 12px;
             border: 1px solid #ccc;
             text-align: left;
+            word-wrap: break-word;
         }
         th {
             background-color: #0056b3;
@@ -46,9 +47,21 @@
         a:hover {
             text-decoration: underline;
         }
+        /* Responsive Design */
         @media screen and (max-width: 768px) {
             table {
-                font-size: 14px;
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            th, td {
+                display: inline-block;
+                width: 100%;
+                text-align: left;
+            }
+            tr {
+                display: block;
+                margin-bottom: 10px;
             }
         }
     </style>
