@@ -21,12 +21,13 @@
         }
         .table-container {
             width: 100%;
-            overflow-x: auto; /* Allow horizontal scrolling for narrow screens */
+            overflow-y: auto; /* Allow vertical scrolling */
+            max-height: 70vh; /* Set max height for the table container */
+            border: 1px solid #ccc;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
             background: #fff;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
@@ -40,6 +41,9 @@
             background-color: #0056b3;
             color: #fff;
             font-weight: bold;
+            position: sticky; /* Make the header row persistent */
+            top: 0; /* Position it at the top of the scrolling container */
+            z-index: 2; /* Ensure it appears above other content */
         }
         tr:nth-child(even) {
             background-color: #f2f2f2;
